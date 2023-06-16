@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.MuiOutlinedInput-root {
+  height: 40px;
+}
+
+.commentBox {
+  overflow-y: auto;
+  height: 200px;
+  /* border: "2px solid red"; */
+}
+
+.logo {
+  color: rgb(102, 174, 102);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.editProfile {
+  border: 2px solid;
+}

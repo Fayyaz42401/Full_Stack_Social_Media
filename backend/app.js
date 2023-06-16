@@ -10,6 +10,7 @@ const app = express();
 
 // Configration
 dotenv.config({
+  origin:"*",
   path: "./config/config.env",
 });
 

@@ -10,7 +10,7 @@ const app = express();
 
 // Configration
 dotenv.config({
-  origin:"*",
+  origin:"http://localhost:5173",
   path: "./config/config.env",
 });
 

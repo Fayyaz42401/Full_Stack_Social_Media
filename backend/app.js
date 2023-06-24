@@ -16,12 +16,11 @@ dotenv.config({
 // Middleware
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 
 app.use(cookieParser());
 app.use(
   cors({
-    origin:"https://fayyaz-social-media.netlify.app",
     credentials: true,
   })
 );

@@ -13,7 +13,7 @@ app.use(cors({
   origin:["https://fayyaz-social-media.vercel.app"],
   methods:["POST","GET","PATCH","DELETE","PUT"],
   credentials:true
-  ))
+}))
 
 
 // Configration

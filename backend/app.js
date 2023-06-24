@@ -8,6 +8,14 @@ import bodyParser from "body-parser";
 // Initilize App
 const app = express();
 
+app.use(cookieParser());
+app.use(cors({
+  origin:["https://fayyaz-social-media.vercel.app"],
+  methods:["POST","GET","PATCH","DELETE","PUT"],
+  credentials:true
+  ))
+
+
 // Configration
 dotenv.config({
   path: "./config/config.env",
@@ -18,7 +26,6 @@ dotenv.config({
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use(cookieParser());
 
 
 // Connect Database

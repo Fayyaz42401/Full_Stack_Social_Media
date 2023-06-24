@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(
   cors({
-      origin:"*",
+      origin:"https://fayyaz-social-media.vercel.app",
     credentials: true,
   })
 );
@@ -45,7 +45,7 @@ app.get("/", (req, res) => {
 app.get("/status", (req, res) => {
   res.json({
     success: true,
-    message: "working Fine",
+    message: "working Fine Fayyaz",
   });
 });
 

@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cookieParser());
 app.use(cors({
-  origin:["https://fayyaz-social-media.vercel.app"],
+  origin:["https://full-stack-social-media-d6qr.vercel.app"],
   methods:["POST","GET","PATCH","DELETE","PUT"],
   credentials:true
 }))

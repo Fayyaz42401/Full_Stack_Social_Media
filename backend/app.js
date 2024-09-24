@@ -30,7 +30,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Connect Database
 
-const mongoURI = "mongodb+srv://fayyaz42401:fayyaz42401@cluster0.lbb8n.mongodb.net/<DbImUsing>?retryWrites=true&w=majority";
+const mongoURI = "mongodb+srv://fayyaz42401:<fayyaz42401>@cluster0.lbb8n.mongodb.net/<DbImUsing>?retryWrites=true&w=majority";
 
 mongoose.connect(mongoURI, {
 useNewUrlParser: true,

@@ -29,10 +29,18 @@ app.use(express.urlencoded({ extended: false }));
 
 
 // Connect Database
-mongoose
-  .connect(process.env.MONGO_URI, { dbName: "facebook" })
-  .then(() => console.log("Database is connected successfully"))
-  .catch((error) => console.log(error.message));
+
+const mongoURI = "mongodb+srv://fayyaz42401:fayyaz42401@cluster0.lbb8n.mongodb.net/<DbImUsing>?retryWrites=true&w=majority";
+
+mongoose.connect(mongoURI, {
+useNewUrlParser: true,
+useUnifiedTopology: true,
+});
+
+// mongoose
+//   .connect(process.env.MONGO_URI, { dbName: "facebook" })
+//   .then(() => console.log("Database is connected successfully"))
+//   .catch((error) => console.log(error.message));
 
 app.listen(5000, () => {
   console.log(`Server is working on port:${process.env.PORT}`);
